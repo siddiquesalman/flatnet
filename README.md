@@ -1,5 +1,5 @@
 # flatnet-separable
-This is the official pytorch code repo for the ICCV 2019 paper **Towards Photorealistic Reconstruction of Highly Multiplexed Lensless Images**
+This repo contains the test code for the lensless reconstruction algorithm proposed in ICCV 2019 paper **Towards Photorealistic Reconstruction of Highly Multiplexed Lensless Images**
 
 Use the notebook **FlatNet-separable.ipynb** to evaluate flatnet on captured measurements. 
 
