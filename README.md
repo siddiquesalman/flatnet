@@ -10,6 +10,6 @@ Pretrained models can be found at : https://www.dropbox.com/sh/1p9n1mclkhlx074/A
 
 Full dataset used for the paper is available at: https://www.dropbox.com/sh/pzmhwh1bjhn86l0/AABix6OgyENxBDGXHFuMeBSfa?dl=0
 
-Example data is provided in the directory **example_data**. It contains some measurements along with their Tikhonov reconstructions. You can use these measurements to test the reconstruction as well without having to download the whole dataset.  
+Example data is provided in the directory **example_data**. It contains some measurements along with their Tikhonov reconstructions. You can use these measurements to test the reconstruction as well without having to download the whole dataset. 'fc_x.png' refers to the measurement while 'rec_x.png' refers to the corresponding Tikhonov reconstruction. 
 
 
