@@ -1,7 +1,7 @@
 # flatnet-separable
 This repo contains the test code for the lensless reconstruction algorithm (Proposed-T and Proposed-R) proposed in ICCV 2019 paper **Towards Photorealistic Reconstruction of Highly Multiplexed Lensless Images**
 
-The best way to make sure all dependencies including are installed is by installing Anaconda followed by PyTorch. 
+The best way to make sure all dependencies are installed is by installing Anaconda followed by PyTorch. 
 It has been tested on PyTorch version 0.4.0 and above
 Once the dependencies are installed, open Jupyter and use the notebook **FlatNet-separable.ipynb** to evaluate flatnet on captured measurements. 
 
