@@ -14,7 +14,7 @@ Example data is provided in the directory **example_data**. It contains some mea
 
 If you use this code, please cite our work:
 
-@inproceedings{khan2019towards,
+@misc{khan2019towards,
   title={Towards photorealistic reconstruction of highly multiplexed lensless images},
   author={Khan, Salman S and Adarsh, VR and Boominathan, Vivek and Tan, Jasper and Veeraraghavan, Ashok and Mitra, Kaushik},
   booktitle={Proceedings of the IEEE International Conference on Computer Vision},
