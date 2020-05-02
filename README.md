@@ -12,4 +12,13 @@ Full dataset used for the paper is available at: [[Link]](https://www.dropbox.co
 
 Example data is provided in the directory **example_data**. It contains some measurements along with their Tikhonov reconstructions. You can use these measurements to test the reconstruction as well without having to download the whole dataset. 'fc_x.png' refers to the measurement while 'rec_x.png' refers to the corresponding Tikhonov reconstruction. 
 
+If you use this code, please cite our work:
+
+@inproceedings{khan2019towards,
+  title={Towards photorealistic reconstruction of highly multiplexed lensless images},
+  author={Khan, Salman S and Adarsh, VR and Boominathan, Vivek and Tan, Jasper and Veeraraghavan, Ashok and Mitra, Kaushik},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={7860--7869},
+  year={2019}
+}
 
