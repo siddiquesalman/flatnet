@@ -22,3 +22,4 @@ If you use this code, please cite our work:
   year={2019}
 }
 ```
+In case of any queries, please reach to me at salmansiddique.khan@gmail.com
