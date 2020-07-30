@@ -8,7 +8,7 @@ Once the dependencies are installed, open Jupyter and use the notebook **FlatNet
 
 Pretrained models can be found at : [[Link]](https://www.dropbox.com/sh/1p9n1mclkhlx074/AADj4fLZQaFrH1y-aAnF40Bda?dl=0)
 
-Full dataset used for the paper is available at: [[Link]](https://www.dropbox.com/sh/pzmhwh1bjhn86l0/AABix6OgyENxBDGXHFuMeBSfa?dl=0)
+Full dataset used for the paper is available at: [[Dropbox]](https://www.dropbox.com/sh/pzmhwh1bjhn86l0/AABix6OgyENxBDGXHFuMeBSfa?dl=0) or [[G-Drive]](https://drive.google.com/drive/folders/1nyng6spi7SQRZb_1zEkOScOIPEI9DCUL?usp=sharing)
 
 Example data is provided in the directory **example_data**. It contains some measurements along with their Tikhonov reconstructions. You can use these measurements to test the reconstruction as well without having to download the whole dataset. 'fc_x.png' refers to the measurement while 'rec_x.png' refers to the corresponding Tikhonov reconstruction. 
 
