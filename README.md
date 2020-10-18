@@ -16,7 +16,7 @@ Example data is provided in the directory **example_data**. It contains some mea
 **Training from scratch**
 Please run **main.py** to train from scratch
 
-Alternatively run the shell script **flatnet.sh** found in execs directory to run with some desired arguments
+Alternatively run the shell script **flatnet.sh** found in execs directory to run with some desired arguments.
 
 **REGARDING INITIALIZATIONS**
 
