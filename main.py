@@ -44,13 +44,14 @@ parser.add_argument('--discriminatorLR', default=1e-4, type=float)
 parser.add_argument('--init', default='Transpose')
 parser.add_argument('--numEpoch', default=20,type=int)
 parser.add_argument('--disPreEpochs', default=5,type=int)
+parser.add_argument('--valFreq', default=200,type=int)
 parser.add_argument('--pretrain',dest='pretrain', action='store_true')
 parser.set_defaults(pretrain=True)
 
 opt = parser.parse_args()
 
 device = torch.device("cuda")
-data = '/root/data/Amplitude Mask/models/'
+data = '/media/data/salman/Amplitude Mask/models/'
 savedir = os.path.join(data, opt.modelRoot)
 class Logger(object):
 	def __init__(self, save_dir):

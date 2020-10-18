@@ -109,27 +109,28 @@ def train_full_epoch(gen, dis, vgg, wts, optim_gen, optim_dis, train_loader, val
 		loss.backward()
 		optim_gen.step()
 		train_error.append(loss.item())
-		Xvalout, vloss= validate(gen, dis, vgg, wts, val_loader, gen_criterion, dis_criterion, device)
-		val_error.append(vloss)
-		if vloss < vla:
-			vla = vloss
-			Xvalout = Xvalout.cpu()
-			ims = Xvalout.detach().numpy()
-			ims = ims[0, :, :, :]
-			ims = np.swapaxes(np.swapaxes(ims,0,2),0,1)
-			ims = (ims-np.min(ims))/(np.max(ims)-np.min(ims))
-			skimage.io.imsave(savedir+'/best.png', ims)
-			dict_save = {
-			'gen_state_dict': gen.state_dict(),
-			'dis_state_dict': dis.state_dict(),
-			'optimizerG_state_dict': optim_gen.state_dict(),
-			'optimizerD_state_dict': optim_dis.state_dict(),
-			'train_err': train_error,
-			'val_err': val_error,
-			'disc_err': disc_err,
-			'last_finished_epoch': e}
-			torch.save(dict_save, savedir+'/best.tar')
-			print('Saved best')
+		if i % opt.valFreq == 0:
+			Xvalout, vloss= validate(gen, dis, vgg, wts, val_loader, gen_criterion, dis_criterion, device)
+			val_error.append(vloss)
+			if vloss < vla:
+				vla = vloss
+				Xvalout = Xvalout.cpu()
+				ims = Xvalout.detach().numpy()
+				ims = ims[0, :, :, :]
+				ims = np.swapaxes(np.swapaxes(ims,0,2),0,1)
+				ims = (ims-np.min(ims))/(np.max(ims)-np.min(ims))
+				skimage.io.imsave(savedir+'/best.png', ims)
+				dict_save = {
+				'gen_state_dict': gen.state_dict(),
+				'dis_state_dict': dis.state_dict(),
+				'optimizerG_state_dict': optim_gen.state_dict(),
+				'optimizerD_state_dict': optim_dis.state_dict(),
+				'train_err': train_error,
+				'val_err': val_error,
+				'disc_err': disc_err,
+				'last_finished_epoch': e}
+				torch.save(dict_save, savedir+'/best.tar')
+				print('Saved best')
 		print('Epoch and Iterations::'+str(e)+','+str(i))
 		print('Train and Val Loss:'+str(loss.item())+','+str(vloss))
 		ss.flush()
