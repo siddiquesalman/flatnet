@@ -17,7 +17,7 @@ Example data is provided in the directory **example_data**. It contains some mea
 
 Please run **main.py** to train from scratch
 
-Alternatively run the shell script **flatnet.sh** found in execs directory with desired arguments.
+Alternatively, run the shell script **flatnet.sh** found in execs directory with desired arguments.
 
 Please make sure your path is set properly for the dataset and saving models. For saving model, make sure the variable 'data' in main.py is appropriately changed. For dataset, make sure the variable 'temp' in dataloader.py is changed appropriately.
 
