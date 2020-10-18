@@ -81,7 +81,7 @@ train_err = []
 sys.stdout.flush()
 if opt.init=='Transpose':
 	print('Loading calibrated files')
-	d=sio.loadmat('/data/flatcam_prototype2_calibdata.mat')
+	d=sio.loadmat('data/flatcam_prototype2_calibdata.mat')
 	phil=np.zeros((500,256,1))
 	phir=np.zeros((620,256,1))
 	phil[:,:,0]=d['P1gb']
@@ -92,8 +92,8 @@ else:
 	print('Loading Random Toeplitz')
 	phil=np.zeros((500,256,1))
 	phir=np.zeros((620,256,1))
-	pl = sio.loadmat('/data/phil_toep_slope22.mat')
-	pr = sio.loadmat('/data/phir_toep_slope22.mat')
+	pl = sio.loadmat('data/phil_toep_slope22.mat')
+	pr = sio.loadmat('data/phir_toep_slope22.mat')
 	phil[:,:,0] = pl['phil'][:,:,0]
 	phir[:,:,0] = pr['phir'][:,:,0]
 	phil=phil.astype('float32')
