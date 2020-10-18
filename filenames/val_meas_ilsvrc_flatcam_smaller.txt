@@ -1,0 +1,10 @@
+Amplitude Mask/dataset/caps_1cap/n01818515/n01818515_11302..png
+Amplitude Mask/dataset/caps_1cap/n01818515/n01818515_8905..png
+Amplitude Mask/dataset/caps_1cap/n02165456/n02165456_10030..png
+Amplitude Mask/dataset/caps_1cap/n02870880/n02870880_7003..png
+Amplitude Mask/dataset/caps_1cap/n02871525/n02871525_9573..png
+Amplitude Mask/dataset/caps_1cap/n02980441/n02980441_9185..png
+Amplitude Mask/dataset/caps_1cap/n09193705/n09193705_4048..png
+Amplitude Mask/dataset/caps_1cap/n09193705/n09193705_49355..png
+Amplitude Mask/dataset/caps_1cap/n09193705/n09193705_5945..png
+Amplitude Mask/dataset/caps_1cap/n09193705/n09193705_8254..png
