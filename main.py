@@ -160,7 +160,9 @@ torch.save(dis.state_dict(), savedir+'/pretrained_disc.tar')
 
 for e in range(ei,opt.numEpoch):
 	sys.stdout.flush()
-	train_error, val_error, disc_err, vla, Xvalout = train_full_epoch(gen, dis, vgg, wts, optim_gen, optim_dis, train_loader, val_loader, gen_criterion, dis_criterion, device, vla, e, savedir, train_error, val_error, disc_err, sys.stdout,opt.valFreq)
+	train_error, val_error, disc_err, vla, Xvalout = train_full_epoch(gen, dis, vgg, wts, optim_gen, optim_dis,
+		train_loader, val_loader,gen_criterion, dis_criterion, device, vla, e, savedir, train_error, val_error,
+		disc_err, sys.stdout,opt.valFreq)
 	Xvalout = Xvalout.cpu()
 	ims = Xvalout.detach().numpy()
 	ims = ims[0, :, :, :]

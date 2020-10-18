@@ -66,7 +66,8 @@ def validate(gen, dis, vgg, wts, val_loader, gen_criterion, dis_criterion,device
 	return op, tloss
 
 
-def train_full_epoch(gen, dis, vgg, wts, optim_gen, optim_dis, train_loader, val_loader, gen_criterion, dis_criterion, device, vla, e, savedir, train_error, val_error, disc_err,ss,valFreq):
+def train_full_epoch(gen, dis, vgg, wts, optim_gen, optim_dis, train_loader, val_loader,
+gen_criterion, dis_criterion, device, vla, e, savedir, train_error, val_error, disc_err,ss,valFreq):
 	i = 0
 	
 	for X_train, Y_train in train_loader:
