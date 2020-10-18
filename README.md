@@ -13,7 +13,8 @@ Full dataset used for the paper is available at: [[Dropbox]](https://www.dropbox
 Example data is provided in the directory **example_data**. It contains some measurements along with their Tikhonov reconstructions. You can use these measurements to test the reconstruction as well without having to download the whole dataset. 'fc_x.png' refers to the measurement while 'rec_x.png' refers to the corresponding Tikhonov reconstruction. 
 
 
-**Training from scratch**
+**TRAINING FROM SCRATCH**
+
 Please run **main.py** to train from scratch
 
 Alternatively run the shell script **flatnet.sh** found in execs directory to run with some desired arguments.
