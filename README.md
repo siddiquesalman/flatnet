@@ -1,10 +1,11 @@
-# flatnet-separable
+# flatnet
 This repo contains the train and test code for the lensless reconstruction algorithm proposed in the ICCV 2019 paper **Towards Photorealistic Reconstruction of Highly Multiplexed Lensless Images** [[PDF]](http://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf) and the IEEE TPAMI 2020 paper **FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements**.
 
+# flatnet-sep
 The best way to make sure all dependencies are installed is by installing Anaconda followed by PyTorch. 
 It has been tested on PyTorch version 0.4.0 and above.
 
-Once the dependencies are installed, to run the test script, open Jupyter and use the notebook **FlatNet-separable.ipynb** to evaluate flatnet-separable on captured measurements. Similarly, use **Flatnet-gen.ipynb** to evaluate flatnet-gen on captured measurement.
+Once the dependencies are installed, to run the test script, open Jupyter and use the notebook **FlatNet-separable.ipynb** to evaluate flatnet-separable on captured measurements.
 
 Pretrained models can be found at : [[Link]](https://www.dropbox.com/sh/1p9n1mclkhlx074/AADj4fLZQaFrH1y-aAnF40Bda?dl=0)
 
