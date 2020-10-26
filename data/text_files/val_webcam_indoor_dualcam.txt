@@ -1,0 +1,16 @@
+PhaseCapture_Webcam/saves/newcaps_indoor_16Feb/webcam_04.png
+PhaseCapture_Webcam/saves/newcaps_indoor_16Feb/webcam_41.png
+PhaseCapture_Webcam/saves/newcaps_indoor_13feb/webcam_04.png
+PhaseCapture_Webcam/saves/newcaps_indoor_13feb/webcam_31.png
+PhaseCapture_Webcam/saves/newcaps_indoor_15Feb/webcam_28.png
+PhaseCapture_Webcam/saves/newcaps_indoor_15Feb/webcam_68.png
+PhaseCapture_Webcam/saves/newcaps_indoor_15Feb/webcam_97.png
+PhaseCapture_Webcam/saves/newcaps_indoor_17Feb/webcam_51.png
+PhaseCapture_Webcam/saves/newcaps_indoor_17Feb/webcam_97.png
+PhaseCapture_Webcam/saves/newcaps_indoor_18Feb/webcam_61.png
+PhaseCapture_Webcam/saves/newcaps_indoor_20Feb/webcam_01.png
+PhaseCapture_Webcam/saves/newcaps_indoor_20Feb/webcam_101.png
+PhaseCapture_Webcam/saves/newcaps_indoor_20Feb/webcam_17.png
+PhaseCapture_Webcam/saves/newcaps_indoor_20Feb/webcam_36.png
+PhaseCapture_Webcam/saves/newcaps_indoor_20Feb/webcam_83.png
+PhaseCapture_Webcam/saves/newcaps_indoor_20Feb/webcam_96.png

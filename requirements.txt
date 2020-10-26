@@ -1,0 +1,15 @@
+common
+future
+h5py
+matplotlib
+numpy
+opencv-contrib-python
+recordclass
+sacred
+scikit-image
+scipy
+streamlit
+tensorboard
+torchsummary
+tqdm
+

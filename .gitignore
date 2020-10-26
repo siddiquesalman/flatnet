@@ -1,0 +1,17 @@
+*.pyc
+
+runs*/*
+output*/*
+ckpts*/*
+data/*_psf/*
+data/imagenet*/*
+.idea/*
+
+pylon/*
+
+*Icon*
+
+dumps/*
+best_saves*
+
+PerceptualSimilarity/models/weights/*/*.pth
