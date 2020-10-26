@@ -16,9 +16,9 @@ Official implementation for our lensless reconstruction algorithm, **FlatNet**, 
 
 ## Colab Notebooks
 
-* FlatNet-Sep (separable model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/siddiquesalman/flatnet/blob/master/FlatNet-separable.ipynb)
+* FlatNet-Sep (separable model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/siddiquesalman/flatnet/blob/flatnet-sep/FlatNet-separable.ipynb)
 
-* FlatNet-Gen (general model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/varun19299/flatnet-gen/blob/master/explore_flatnet_gen.ipynb)
+* FlatNet-Gen (general model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/siddiquesalman/flatnet/blob/flatnet-gen/explore_flatnet_gen.ipynb)
 
 ## Requirements
 
@@ -62,7 +62,7 @@ Please make sure your path is set properly for the dataset and saving models. Fo
 
 ## FlatNet-Gen
 
-Switch to the [`flatnet-gen`]() branch first.
+Switch to the [`flatnet-gen`](https://github.com/siddiquesalman/flatnet/tree/flatnet-gen) branch first.
 
 <details>
 <summary>Show all details</summary>
@@ -152,4 +152,4 @@ Will be updated soon.
 
 ## Contact Us
 
-In case of any queries, please reach out to salmansiddique.khan@gmail.com.
+In case of any queries, please reach out to [Salman](mailto:salmansiddique.khan@gmail.com?subject=[FlatNet%20Code%20Query]) or [Varun](mailto:vsundar4@wisc.edu?subject=[FlatNet%20Code%20Query]).
