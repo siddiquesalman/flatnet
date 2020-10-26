@@ -13,5 +13,6 @@ pylon/*
 
 dumps/*
 best_saves*
+.ipynb*
 
 PerceptualSimilarity/models/weights/*/*.pth
