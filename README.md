@@ -2,6 +2,8 @@
 
 [Project Page]() | [ICCV 2019 Paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf) | [TPAMI 2020 Paper]()
 
+![Method Diagram](images/fig2_9Apr.jpg)
+
 Official implementation for our lensless reconstruction algorithm, **FlatNet**, proposed in:
 
 * **ICCV 2019**: "Towards Photorealistic Reconstruction of Highly Multiplexed Lensless Images"
@@ -12,10 +14,7 @@ Official implementation for our lensless reconstruction algorithm, **FlatNet**, 
 
 <i>[Salman S. Khan](https://siddiquesalman.github.io)<sup>*1</sup> , [Varun Sundar](https://varun19299.github.io)<sup>*1</sup> , [Vivek Boominathan](https://vivekboominathan.com)<sup>2</sup> , [Ashok Veeraraghavan](http://www.ece.rice.edu/~av21/)<sup>2</sup>  , and [Kaushik Mitra](http://www.ee.iitm.ac.in/kmitra/)<sup>1</sup>.</i>
 
-<sup>1</sup> IIT Madras | <sup>2</sup> Rice University | <sup>*</sup> Denotes equal contribution.
-
-![Method Diagram](images/fig2_9Apr.jpg)
-
+<small><sup>1</sup> IIT Madras | <sup>2</sup> Rice University | <sup>*</sup> Denotes equal contribution.</small>
 
 ## Colab Notebooks
 
