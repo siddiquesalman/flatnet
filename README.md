@@ -16,9 +16,9 @@ Official implementation for our lensless reconstruction algorithm, **FlatNet**, 
 
 ## Colab Notebooks
 
-* FlatNet-Sep (separable model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/siddiquesalman/flatnet/blob/master/FlatNet-separable.ipynb)
+* FlatNet-Sep (separable model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/siddiquesalman/flatnet/blob/flatnet-sep/FlatNet-separable.ipynb)
 
-* FlatNet-Gen (general model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/varun19299/flatnet-gen/blob/master/explore_flatnet_gen.ipynb)
+* FlatNet-Gen (general model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/siddiquesalman/flatnet/blob/flatnet-gen/explore_flatnet_gen.ipynb)
 
 ## Requirements
 
@@ -62,7 +62,7 @@ Please make sure your path is set properly for the dataset and saving models. Fo
 
 ## FlatNet-Gen
 
-Switch to the [`flatnet-gen`]() branch first.
+Switch to the [`flatnet-gen`](https://github.com/siddiquesalman/flatnet/tree/flatnet-gen) branch first.
 
 <details>
 <summary>Show all details</summary>
