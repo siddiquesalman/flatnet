@@ -152,4 +152,4 @@ Will be updated soon.
 
 ## Contact Us
 
-In case of any queries, please reach out to salmansiddique.khan@gmail.com.
+In case of any queries, please reach out to [Salman](mailto:salmansiddique.khan@gmail.com?subject=[FlatNet Code Query]) or [Varun](mailto:vsundar4@wisc.edu?subject=[FlatNet Code Query]).
