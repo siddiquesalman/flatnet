@@ -1,12 +1,25 @@
 # FlatNet
-This repo contains the train and test code for the lensless reconstruction algorithm proposed in the ICCV 2019 paper **Towards Photorealistic Reconstruction of Highly Multiplexed Lensless Images** [[PDF]](http://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf) and the IEEE TPAMI 2020 paper 
-**FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements**.
+
+[Project Page]() | [ICCV 2019 Paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf) | [TPAMI 2020 Paper]()
+
+Official implementation for our lensless reconstruction algorithm, **FlatNet**, proposed in:
+
+* **ICCV 2019**: "Towards Photorealistic Reconstruction of Highly Multiplexed Lensless Images"
+
+<i>[Salman S. Khan](https://siddiquesalman.github.io)<sup>1</sup> , [Adarsh V. R.](https://twitter.com/adarshvr02)<sup>1</sup> , [Vivek Boominathan](https://vivekboominathan.com)<sup>2</sup>  , [Jasper Tan](http://jaspertan.web.rice.edu)<sup>2</sup> , [Ashok Veeraraghavan](http://www.ece.rice.edu/~av21/)<sup>2</sup> , and [Kaushik Mitra](http://www.ee.iitm.ac.in/kmitra/)<sup>1</sup>.</i>
+
+* **IEEE TPAMI 2020**: "FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements".
+
+<i>[Salman S. Khan](https://siddiquesalman.github.io)<sup>*1</sup> , [Varun Sundar](https://varun19299.github.io)<sup>*1</sup> , [Vivek Boominathan](https://vivekboominathan.com)<sup>2</sup> , [Ashok Veeraraghavan](http://www.ece.rice.edu/~av21/)<sup>2</sup>  , and [Kaushik Mitra](http://www.ee.iitm.ac.in/kmitra/)<sup>1</sup>.</i>
+
+<sup>1</sup> IIT Madras | <sup>2</sup> Rice University | <sup>*</sup> Denotes equal contribution.
 
 ![Method Diagram](images/fig2_9Apr.jpg)
 
+
 ## Colab Notebooks
 
-* FlatNet-Sep (separable model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/varun19299/flatnet-gen/blob/master/explore_flatnet_gen.ipynb)
+* FlatNet-Sep (separable model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/siddiquesalman/flatnet/blob/master/FlatNet-separable.ipynb)
 
 * FlatNet-Gen (general model): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/varun19299/flatnet-gen/blob/master/explore_flatnet_gen.ipynb)
 
@@ -16,10 +29,11 @@ This repo contains the train and test code for the lensless reconstruction algor
 * pytorch 1.6+
 * `pip install -r requirements.txt`
 
-# FlatNet-sep
+## FlatNet-Sep
 
 <details>
 <summary>Show all details</summary>
+
 To run the test script, open Jupyter and use the notebook `FlatNet-separable.ipynb` to evaluate flatnet-separable on captured measurements.
 
 Pretrained models can be found at : [[Dropbox]](https://www.dropbox.com/sh/1p9n1mclkhlx074/AADj4fLZQaFrH1y-aAnF40Bda?dl=0)
@@ -55,7 +69,8 @@ Switch to the [`flatnet-gen`]() branch first.
 
 <details>
 <summary>Show all details</summary>
-## Data, PSFs and Checkpoint
+
+### Data, PSFs and Checkpoint
 
 * Download data as [imagenet_caps_384_12bit_Feb_19](https://drive.google.com/open?id=1TTiQbIX_a880slUk4US32wovfqhsIYpd&authuser=ee16b068%40smail.iitm.ac.in&usp=drive_fs) and place under `data` (or symlink it).
 * Download Point Spread Function(s) and Mask(s) as [phase_psf](https://drive.google.com/open?id=1BbotgTN4I2kGanWV130dLWwxalODo-FG&authuser=ee16b068%40smail.iitm.ac.in&usp=drive_fs) and place under `data` (or symlink it).
@@ -73,14 +88,14 @@ You should then have the following directory structure:
 |   `-- phase_psf
 ```
 
-## Streamlit Server
+### Streamlit Server
 
 Run as: `streamlit run test_streamlit.py`
 
 Streamlit is an actively developed package, and while we install the latest version in this project, please note that backward compatibility may break in upcoming months. 
 Nevertheless, we shall try to keep `test_streamlit.py` updated to reflect these changes.
 
-## Train Script
+### Train Script
 
 Run as:
 
@@ -95,7 +110,7 @@ For a multi-gpu version (we use pytorch's `distdataparallel`):
 python -m torch.distributed.launch --nproc_per_node=3 --use_env train.py with ours_meas_1280_1408 distdataparallel=True -p
 ```
 
-## Val Script
+### Val Script
 
 ```bash
 python val.py with ours_meas_1280_1408 -p
@@ -103,7 +118,7 @@ python val.py with ours_meas_1280_1408 -p
 
 Metrics and Outputs are writen at `output_dir/exp_name/`.
 
-## Configs
+### Configs
 
 See `config.py` for exhaustive set of config options. Create a new function to add a configuration.
 
@@ -135,9 +150,9 @@ If you use this code, please cite our work:
 And our more recent TPAMI paper:
 
 ```
-
+Will be updated soon.
 ```
 
 ## Contact Us
 
-In case of any queries, please reach out to salmansiddique.khan@gmail.com
+In case of any queries, please reach out to salmansiddique.khan@gmail.com.
