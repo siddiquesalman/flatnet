@@ -2,9 +2,9 @@
 
 [Project Page]() | [ICCV 2019 Paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf) | [TPAMI 2020 Paper]()
 
-<br/>
+<br><br/>
 ![Method Diagram](images/fig2_9Apr.jpg)
-<br/>
+<br><br/>
 
 Official implementation for our lensless reconstruction algorithm, **FlatNet**, proposed in:
 
