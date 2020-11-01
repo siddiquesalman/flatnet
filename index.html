@@ -67,10 +67,11 @@
             <h2 class="col-md-12 text-center">
                 FlatNet: Towards Photorealistic Scene <br>
                 Reconstruction from Lensless Measurements</br>
-                <!--                 <small>
-                    arXiv 2020
-                </small> -->
+                <small>
+                    IEEE TPAMI 2020
+                </small>
             </h2>
+
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
@@ -117,20 +118,20 @@
             <div class="col-md-4 col-md-offset-4 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
-                        <a href="">
+                        <a href="https://arxiv.org/abs/2010.15440">
                             <image src="img/ff_paper_image.png" height="60px">
                                 <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/varun19299/flatnet-gen">
+                        <a href="https://github.com/siddiquesalman/flatnet">
                             <image src="img/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                         </a>
                     </li>
                     <li>
                         <a
-                            href="https://colab.research.google.com/github/varun19299/flatnet-gen/blob/master/explore_flatnet_gen.ipynb">
+                            href="https://colab.research.google.com/github/siddiquesalman/flatnet/blob/flatnet-gen/explore_flatnet_gen.ipynb">
                             <image src="img/colab_favicon_256px.png" height="60px">
                                 <h4><strong>Collab</strong></h4>
                         </a>
@@ -151,7 +152,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Abstract & Method
+                    Abstract
                 </h3>
                 <image src="img/fig_1.jpg" class="img-responsive" alt="overview"><br>
                     <p class="text-justify">
@@ -159,47 +160,82 @@
                         by eschewing the bulky lens in a traditional camera. Without a focusing lens, the lensless
                         cameras rely on computational algorithms to recover the scenes from multiplexed measurements.
                         However, the current iterative-optimization-based reconstruction algorithms produce noisier and
-                        perceptually poorer images. <br />
-                    </p>
-
-                    <br />
-
-                    <figure>
-                        <image src="img/fig_2.jpg" class="img-responsive" onmouseover="this.src='img/fig_2_hover.jpg'"
-                            onmouseout="this.src='img/fig_2.jpg'" alt="" />
-                        <figcaption><b><br>Method overview.</b> Hover mouse pointer to see details.</figcaption>
-                    </figure>
-                    <p class="text-justify">
-                        <br /> In this work, we propose a non-iterative deep learning-based reconstruction approach that
+                        perceptually poorer images. In this work, we propose a non-iterative deep learning-based
+                        reconstruction approach that
                         results in orders of magnitude improvement in image quality for lensless reconstructions. Our
                         approach, called <b>FlatNet</b>, lays down a framework for reconstructing high-quality
                         photorealistic
                         images from mask-based lensless cameras, where the camera’s forward model formulation is known.
                         <br>
-
-                        <br> <b>FlatNet</b> consists of two stages: (1) an inversion stage that maps the measurement
-                        into a
-                        space of
-                        intermediate reconstruction by learning parameters within the forward model formulation, and (2)
-                        a perceptual enhancement stage that improves the perceptual quality of this intermediate
-                        reconstruction. These stages are trained together in an end-to-end manner. <br>
-
-                        <br>We show high-quality
-                        reconstructions by performing extensive experiments on real and challenging scenes using two
-                        different types of lensless prototypes: <i><a
-                                href=https://intra.ece.ucr.edu/~sasif/papers/2015_AASVR_flatcam_iccv.pdf>FlatCam</a></i>
-                        which uses a separable forward model and
-                        <i><a href=https://ieeexplore.ieee.org/document/9076617>PhlatCam</a></i>,
-                        which uses a more general non-separable cropped-convolution model. Our end-to-end approach is
-                        fast, produces photorealistic reconstructions, and is easy to adopt for other mask-based
-                        lensless cameras.
                     </p>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method
+                </h3>
+                <p class="text-justify">
 
+                <figure>
+                    <image src="img/fig_2.jpg" class="img-responsive" onmouseover="this.src='img/fig_2_hover.jpg'"
+                        onmouseout="this.src='img/fig_2.jpg'" alt="" />
+                    <figcaption><b><br>Method overview.</b> Hover mouse pointer to see details.</figcaption>
+                </figure>
+                <p class="text-justify">
+                    <br /> <b>FlatNet</b> consists of two stages: (1) an inversion stage that maps the measurement
+                    into a
+                    space of
+                    intermediate reconstruction by learning parameters within the forward model formulation, and (2)
+                    a perceptual enhancement stage that improves the perceptual quality of this intermediate
+                    reconstruction. These stages are trained together in an end-to-end manner. <br>
+
+                    <br>We show high-quality
+                    reconstructions by performing extensive experiments on real and challenging scenes using two
+                    different types of lensless prototypes: <b><a
+                            href=https://intra.ece.ucr.edu/~sasif/papers/2015_AASVR_flatcam_iccv.pdf>FlatCam</a></b>
+                    which uses a separable forward model and
+                    <b><a href=https://ieeexplore.ieee.org/document/9076617>PhlatCam</a></b>,
+                    which uses a more general non-separable cropped-convolution model. Our end-to-end approach is
+                    fast, produces photorealistic reconstructions, and is easy to adopt for other mask-based
+                    lensless cameras.
+                </p>
+            </div>
+        </div>
 
         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Spotlight Video at CVPR 2020
+                </h3>
+
+                <br>
+                <p align="center">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- width="500" height="281" -->
+                    <iframe src="https://www.youtube.com/embed/GMouWS_Zoa4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                </p>
+
+                <br> Presented at the CVPR <a href="http://ccd2020.cms.caltech.edu">Computational Cameras and Displays
+                    (CCD)</a> Workshop 2020.
+                <br>
+                <table align=center width=800px>
+                    <br>
+                    <tr>
+                        <center>
+                            <span style="font-size:22px">&nbsp;<a
+                                    href='https://www.dropbox.com/s/jebzppe1ikdbcld/FlatNet%20CCD%20Spotlight.pptx?dl=0'>[Slides]</a>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Key Contributions
@@ -250,101 +286,8 @@
                         methods.</li>
                 </ul>
             </div>
-        </div>
-
-
-        <!-- <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Simulation Procedure
-                </h3>
-                <figure>
-                    <image src="img/fig_7_sim.jpg" class="img-responsive" alt="overview">
-                        <figcaption><b>Some simulated outputs.</b> Notice how closely the simulated measurements
-                            resemble real ones.
-                        </figcaption>
-                </figure>
-                <p class="text-justify">
-                    <br /> Availability of data, even with clever schemes like <a
-                        href="https://arxiv.org/abs/2003.04857">monitor acquisition</a>, can be a constraining
-                    factor
-                    while designing learning based approaches in imaging pipelines. Instead, we propose a simple
-                    simulation scheme to cheaply generate training data.<br />
-
-                    <br />We train a shallow version of DAGF to transform clean <a
-                        href="https://data.vision.ee.ethz.ch/cvl/DIV2K/">DIV2K images</a> to various display
-                    measurements
-                    (glass, POLED or TOLED). We use this data to pre-train DAGF, which provides us a performance boost
-                    of 0.3 to 0.5 dB in PSNR. See our paper for more details.
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>Results </h3>
-                <figure>
-                    <image src="img/fig_5_poled.jpg" class="img-responsive" alt="overview">
-                        <figcaption><b>Qualitative comparison on POLED measurements.</b>
-                        </figcaption>
-                </figure>
-                <p class="text-justify">
-                    <br>
-                    DAGF's ability to directly train on megapixel images and hence aggregate contextual information
-                    over large receptive fields leads to a superior restoration. </br>
-
-                    </br>We show significant improvement over
-                    exisitng state-of-the-art
-                    image-restoration methods, which are designed for tasks such as deraining, dehazing and image
-                    transformation. Such methods lack sufficient input context for a challenging scenario such as
-                    UDC.</br>
-
-
-                    </br>This is more evident on the POLED
-                    dataset, where line, colour and blur artefacts can be seen in the baselines.</br>
-                </p>
-
-                <figure>
-                    <image src="img/fig_6_toled.jpg" class="img-responsive" alt="overview">
-                        <figcaption><b>Qualitative comparison on TOLED measurements.</b>
-                        </figcaption>
-                </figure>
-
-                <p class="text-justify">
-                    <br> The baselines perform better on the moderatly degraded TOLED measurements, but DAGF still
-                    surpasses them visually and metric-wise.
-                </p>
-            </div>
         </div> -->
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Spotlight at CVPR CCD 2020
-                </h3>
-
-                <br>
-                <p align="center">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <!-- width="600" height="338" -->
-                    <iframe src="https://www.youtube.com/embed/GMouWS_Zoa4" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-
-                </p>
-
-                <br> Presented at the CVPR Computational Cameras and Displays (CCD) Workshop 2020.
-                <br>
-                <table align=center width=800px>
-                    <br>
-                    <tr>
-                        <center>
-                            <span style="font-size:22px">&nbsp;<a
-                                    href='https://www.dropbox.com/s/jebzppe1ikdbcld/FlatNet%20CCD%20Spotlight.pptx?dl=0'>[Slides]</a>
-                </table>
-            </div>
-        </div>
 
 
         <div class="row">
@@ -353,18 +296,20 @@
                     Citation
                 </h3>
                 <br />
-                <!-- <div class="form-group col-md-10 col-md-offset-1">
-                    <textarea id="bibtex" class="form-control" rows="9" readonly>
-@misc{sundar2020deep,
-title={Deep Atrous Guided Filter for Image Restoration in Under Display Cameras},
-author={Varun Sundar and Sumanth Hegde and Divya Kothandaraman and Kaushik Mitra},
-year={2020},
-eprint={2008.06229},
-archivePrefix={arXiv},
-primaryClass={cs.CV}
-}</textarea>
-                </div> -->
-                Will be updated soon.
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" rows="13" readonly>
+@ARTICLE {9239993,
+author = {S. Khan and V. Sundar and V. Boominathan and A. Veeraraghavan and K. Mitra},
+journal = {IEEE Transactions on Pattern Analysis & Machine Intelligence},
+title = {FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements},
+year = {2020},
+month = {oct},
+keywords = {cameras;image reconstruction;lenses;multiplexing;computational modeling;mathematical model},
+doi = {10.1109/TPAMI.2020.3033882},
+publisher = {IEEE Computer Society},
+}
+</textarea>
+                </div>
 
             </div>
         </div>
