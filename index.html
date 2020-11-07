@@ -10,8 +10,6 @@
     <meta name="description" content="FlatNet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <base href="/"> -->
-
     <!--FACEBOOK-->
     <meta property="og:image" content="img/twitter-card.jpg">
     <meta property="og:image:type" content="image/png">
@@ -352,7 +350,7 @@
                 </h3>
                 <br />
                 <div class="form-group col-md-10 col-md-offset-1">
-                    <textarea id="bibtex" class="form-control" rows="13" readonly>
+                    <textarea id="bibtex" class="form-control" rows="14" readonly>
     @ARTICLE {9239993,
     author = {S. Khan and V. Sundar and V. Boominathan and A. Veeraraghavan and K. Mitra},
     journal = {IEEE Transactions on Pattern Analysis & Machine Intelligence},
@@ -375,7 +373,27 @@
                     Related Links
                 </h3>
                 <p class="text-justify">
-                    <br />FlatCam, PhlatCam, ICCV Paper links
+                    <br /><b>FlatCam</b> was introduced by <a href="https://arxiv.org/abs/1509.00116">Asif et al.
+                        (2015)</a>, using a separable amplitude
+                    mask to replace a conventional lens.<br />
+
+                    <br /><a href="https://arxiv.org/abs/1710.02134">Antipa et al. (2017)</a> further showed how off-the
+                    sheld diffusers and
+                    other random caustics (<b>DiffuserCam</b>) could be used as phase-mask in lensless cameras.<br />
+
+                    <br /><a href="https://ieeexplore.ieee.org/document/9076617">Boominathan et al. (2020)</a> recently
+                    developed <b>PhlatCam</b>, which further
+                    improves light efficiency and reconstruction quality by using a transparent phase mask.<br />
+
+                    <br />Our previous work, <a
+                        href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf">Khan
+                        et al. (2019)</a> introduced <b>FlatNet</b> for separable
+                    lensless models, demonstrating how a learnable inversion layer can be coupled with a image
+                    enhancement model such as UNet.<br />
+
+                    <br />Concurrently, <a href="https://arxiv.org/pdf/1908.11502.pdf">Monakhova et al. (2019)</a>
+                    proposed <b>Le-ADMM</b> which is a unrolled
+                    neural network architecture using learnable ADMM optimization steps.<br />
                     <br />
                 </p>
             </div>
