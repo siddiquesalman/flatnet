@@ -131,18 +131,17 @@
                         </br>Rice University
                     </li>
                     <li>
-                        <a href="http://computationalimaging.rice.edu/team/ashok-veeraraghavan/">
+                        <a href="http://www.ee.iitm.ac.in/kmitra/">
                             Ashok Veeraraghavan
                         </a>
                         </br>Rice University
                     </li>
                     <li>
-                        <a href="http://www.ee.iitm.ac.in/kmitra/">
+                        <a href="http://computationalimaging.rice.edu/team/ashok-veeraraghavan/">
                             Kaushik Mitra
                         </a>
                         </br>IIT Madras
                     </li>
-                    <!-- </br> IIT Madras Rice University -->
                 </ul>
 
                 *denotes equal contribution
@@ -273,9 +272,51 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
+                    FlatNet without Calibration
+                </h3>
+                <br />
+                <image src="img/uncalib.png" class="img-responsive" alt="overview"><br>
+
+                    <br />Calibration of lensless cameras to obtain the Point Spread Function (PSF) can be a time
+                    consuming
+                    process and has to be done for each individual camera. Even a small error in calibration can lead to
+                    severe degradation in the performance of the reconstruction algorithm.<br />
+
+                    <br />Since <b>FlatNet</b> employs a trainable inversion layer, it does not require careful
+                    calibration
+                    of the
+                    PSF. We provide a specific initialization scheme of the trainable layer for both separable and
+                    non-separable cases. Given the mask pattern and camera geometry one can calculate the theoretical
+                    PSF
+                    which is used to initialize the inversion layer. Please refer to the <a
+                        href="https://arxiv.org/abs/2010.15440">paper</a> for more details.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
                     Working with smaller sensors
                 </h3>
 
+                <image src="img/effect_crop.png" class="img-responsive" alt="overview"><br>
+
+                    <br />Another practical scenario that arises in non-separable lensless cameras is the finite size of
+                    sensors. Such cameras can be approximated by a convolutional model, and as a consequence, the sensor
+                    measurement is the weighted sum of various shifted PSFs. For a large PSF, the measurement can often
+                    exceed the
+                    sensor size, leading to lost information. <br />
+
+                    <br />While <b>FlatNet</b> is based on the convolutional model, we show how it can be extended to
+                    robustly handle smaller sensors with a simple padding scheme. As seen in the figure above, our
+                    padding
+                    scheme greatly improves the intermediate reconstruction. Finally, our trainable inversion further
+                    alleviates visual artefacts, allowing <b>FlatNet</b> to recover scenes on smaller sensors without
+                    any
+                    significant performance degradation. Please refer to the <a
+                        href="https://arxiv.org/abs/2010.15440">paper</a> for more details.
+
+                    <image src="img/effect_learning.png" class="img-responsive" alt="overview"><br>
 
             </div>
         </div>
@@ -283,9 +324,47 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    FlatNet without Calibration
+                    Lensless Imaging in Indoor Lighting
                 </h3>
+                <br />
+                <image src="img/unconstrained.png" class="img-responsive" alt="overview"><br>
 
+
+                    <br /> While we trained <b>FlatNet</b> using a monitor-capture scheme, which allows us to
+                    inexpensively
+                    collect a large dataset, our objective is to recover scenes from real measurements captured in the
+                    wild.
+                    we finetune FlatNet using a real world dataset we captured called the Unconstrained Indoor
+                    Dataset.<br />
+
+                    <br />This dataset consists of unaligned webcam and <b>PhlatCam</b> captures. As seen in the figure
+                    above, such a finetuning scheme results in more photorealistic reconstructions.
+
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <br />
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" rows="13" readonly>
+    @ARTICLE {9239993,
+    author = {S. Khan and V. Sundar and V. Boominathan and A. Veeraraghavan and K. Mitra},
+    journal = {IEEE Transactions on Pattern Analysis & Machine Intelligence},
+    title = {FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements},
+    year = {2020},
+    month = {oct},
+    keywords = {cameras;image reconstruction;lenses;multiplexing;computational modeling;mathematical model},
+    doi = {10.1109/TPAMI.2020.3033882},
+    publisher = {IEEE Computer Society},
+    }
+    </textarea>
+                </div>
 
             </div>
         </div>
@@ -293,16 +372,34 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Lensless Imaging with Indoor Lighting
+                    Related Links
                 </h3>
-
-
+                <p class="text-justify">
+                    <br />FlatCam, PhlatCam, ICCV Paper links
+                    <br />
+                </p>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                    <br />This work was supported in part by NSF CAREER: IIS- 1652633, NSF EXPEDITIONS: CCF-1730574,
+                    DARPA NESD: HR0011-17-C0026, NIH Grant: R21EY029459 and the Qualcomm Innovation Fellowship India.
+                    <br />
+                    <br /> This website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and
+                    <a href="https://www.matthewtancik.com">Matthew Tannick</a>.
+                </p>
+            </div>
+        </div>
+    </div>
 
 
-        <!-- <div class="row">
+
+    <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Key Contributions
@@ -357,45 +454,7 @@
 
 
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Citation
-                </h3>
-                <br />
-                <div class="form-group col-md-10 col-md-offset-1">
-                    <textarea id="bibtex" class="form-control" rows="13" readonly>
-@ARTICLE {9239993,
-author = {S. Khan and V. Sundar and V. Boominathan and A. Veeraraghavan and K. Mitra},
-journal = {IEEE Transactions on Pattern Analysis & Machine Intelligence},
-title = {FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements},
-year = {2020},
-month = {oct},
-keywords = {cameras;image reconstruction;lenses;multiplexing;computational modeling;mathematical model},
-doi = {10.1109/TPAMI.2020.3033882},
-publisher = {IEEE Computer Society},
-}
-</textarea>
-                </div>
 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Acknowledgements
-                </h3>
-                <p class="text-justify">
-                    <br />This work was supported in part by NSF CAREER: IIS- 1652633, NSF EXPEDITIONS: CCF-1730574,
-                    DARPA NESD: HR0011-17-C0026, NIH Grant: R21EY029459 and the Qualcomm Innovation Fellowship India.
-                    <br />
-                    <br /> This website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and
-                    <a href="https://www.matthewtancik.com">Matthew Tannick</a>.
-                </p>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
