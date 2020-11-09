@@ -1,6 +1,6 @@
 # FlatNet
 
-[Project Page]() | [ICCV 2019 Paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf) | [TPAMI 2020 Paper]()
+[Project Page](https://siddiquesalman.github.io/flatnet/) | [ICCV 2019 Paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Khan_Towards_Photorealistic_Reconstruction_of_Highly_Multiplexed_Lensless_Images_ICCV_2019_paper.pdf) | [TPAMI 2020 Paper](https://arxiv.org/abs/2010.15440)
 
 <br><br/>
 ![Method Diagram](images/fig2_9Apr.jpg)
@@ -147,7 +147,16 @@ If you use this code, please cite our work:
 And our more recent TPAMI paper:
 
 ```
-Will be updated soon.
+@ARTICLE {9239993,
+    author = {S. Khan and V. Sundar and V. Boominathan and A. Veeraraghavan and K. Mitra},
+    journal = {IEEE Transactions on Pattern Analysis & Machine Intelligence},
+    title = {FlatNet: Towards Photorealistic Scene Reconstruction from Lensless Measurements},
+    year = {2020},
+    month = {oct},
+    keywords = {cameras;image reconstruction;lenses;multiplexing;computational modeling;mathematical model},
+    doi = {10.1109/TPAMI.2020.3033882},
+    publisher = {IEEE Computer Society},
+}
 ```
 
 ## Contact Us
