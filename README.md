@@ -101,7 +101,7 @@ Run as:
 python train.py with ours_meas_1280_1408 -p
 ```
 
-Here, `ours_meas_1280_1408` is a config function, defined in `config.py`, where you can also find an exhaustive list of other configs available.
+Here, `ours_meas_1280_1408` is a config function, defined in `config.py`, where you can also find an exhaustive list of other configs available. For training from scratch, make sure both `resume` and `finetune` flags are set to False.
 For a multi-gpu version (we use pytorch's `distdataparallel`):
 
 ```bash
