@@ -82,6 +82,7 @@ You should then have the following directory structure:
 |   `-- le-admm-fft-1280-1408-learn-1280-1408-meas-1280-1408
 |-- data
 |   |-- imagenet_caps_384_12bit_Feb_19
+|   |-- orig  
 |   `-- phase_psf
 ```
 
