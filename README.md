@@ -69,7 +69,7 @@ Switch to the [`flatnet-gen`](https://github.com/siddiquesalman/flatnet/tree/fla
 
 ### Data, PSFs and Checkpoint
 
-* Download data as [imagenet_caps_384_12bit_Feb_19](https://www.dropbox.com/scl/fo/zgocrrr2kgcmsaoh6fjy0/ANSPqU8EiZrkW7gRQEJmTC0/FlatNet_PhlatCam_Dataset?dl=0&rlkey=6rlqhya1x6g950lp9hn96tz34&subfolder_nav_tracking=1) and uncompress it under `data/imagenet_caps_384_12bit_Feb_19` (or symlink it).
+* Download data as [imagenet_caps_384_12bit_Feb_19](https://www.dropbox.com/scl/fo/nyaxgn4tmzbbc53kopeo3/AOsG2kZS6_E5s_sHU3WLUGU?rlkey=ei9u4rbdth0c9iijn5n0c9xn3&st=dbechmj2&dl=0) and uncompress it under `data/imagenet_caps_384_12bit_Feb_19` (or symlink it).
 * Download Point Spread Function(s) and Mask(s) as [phase_psf](https://github.com/siddiquesalman/flatnet/blob/flatnet-gen/data/phase_psf/psf.npy) and place under `data` (or symlink it).
 * Download checkpoints from [ckpts_phase_mask_Feb_2020_size_384](https://www.dropbox.com/scl/fo/8f75ws9rgx0bwswh8y5er/AMyVfNbT9H0KvEZh3d0nbVU?rlkey=fgralgr3gy8kegsrxxbmugbkx&e=1&st=ytnus60y&dl=0) and place as `ckpts_phase_mask_Feb_2020_size_384`.
 
