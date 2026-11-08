@@ -70,7 +70,7 @@ Switch to the [`flatnet-gen`](https://github.com/siddiquesalman/flatnet/tree/fla
 ### Data, PSFs and Checkpoint
 
 * Download data as [imagenet_caps_384_12bit_Feb_19](https://www.dropbox.com/scl/fo/nyaxgn4tmzbbc53kopeo3/AOsG2kZS6_E5s_sHU3WLUGU?rlkey=ei9u4rbdth0c9iijn5n0c9xn3&st=dbechmj2&dl=0) and place under `data` (or symlink it).
-* Download Point Spread Function(s) and Mask(s) as [phase_psf](https://drive.google.com/open?id=1BbotgTN4I2kGanWV130dLWwxalODo-FG&authuser=ee16b068%40smail.iitm.ac.in&usp=drive_fs) and place under `data` (or symlink it).
+* Download Point Spread Function(s) and Mask(s) as [phase_psf](https://github.com/siddiquesalman/flatnet/blob/flatnet-gen/data/phase_psf/psf.npy) and place under `data` (or symlink it).
 * Download checkpoints from [ckpts_phase_mask_Feb_2020_size_384](https://drive.google.com/open?id=159MsGGakny59MSXuynHMYSWiaq73o4af&authuser=ee16b068%40smail.iitm.ac.in&usp=drive_fs) and place as `ckpts_phase_mask_Feb_2020_size_384`.
 
 You should then have the following directory structure:
